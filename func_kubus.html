@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung 2 buah kubus</title>
+</head>
+<body>
+    <script>
+        let sisiA = prompt(`Masukkan Sisi Kubus A ?`);
+        let sisiB = prompt(`Masukkan Sisi Kubus B ? `);
+
+
+        function kubus() {
+            let result, kubusA, kubusB;
+            kubusA = (sisiA ** 3);
+            kubusB = (sisiB ** 3);
+            result = kubusA + kubusB;
+            return result;           
+            
+        }
+
+        console.log(kubus());
+
+
+
+    </script>
+</body>
+</html>
