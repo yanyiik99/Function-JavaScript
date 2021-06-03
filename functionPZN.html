@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+        <h1 style="color:dodgerblue;">Function JavaScript</h1>
+    <script>
+        //Membuat FUNCTION dengan cara sederhana;
+        function sayHelloWorld() {
+            document.writeln(`<h3 style="color:red;">Hello World</h3>`);
+        
+        }
+        //Memanggil FUNCTIION;
+        sayHelloWorld();
+        sayHelloWorld();
+
+
+        //FUNCTION dengan parameter;
+        function sayName(firstName, middleName, lastName){
+            document.writeln(`<p style="color: #867ae9;">Hai Apa kabar ${firstName} ${middleName} ${lastName} semoga selalu diberikan kesehatan :) </p>`);
+        }
+
+        //memanggil Function;
+        sayName("Ari", "Pramana", "Putra");
+        sayName("Adi", "Suta", "Wiguna");
+
+        
+        //FUNCTION dengan return value;
+        function animalsFourLegs(animal1, animal2){
+            const result = animal1 + " and " +animal2;
+            return result;
+
+        }
+        //memanggil function
+        const result = animalsFourLegs("Cat", "Dog");
+        document.writeln(`Animals with four legs ${result}`);
+        
+
+
+    </script>
+</body>
+</html>
