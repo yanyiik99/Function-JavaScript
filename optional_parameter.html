@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Parameter Function</title>
+</head>
+<body>
+    <script>
+        // Optional Parameter yaitu Undefined;
+        // jika kita memasukkan parameter lebih,
+        // dan memanggil function dengan parameter kurang dari parameter function;
+        function identitas(name, age, kelas){
+            let data = kelas ?? "Nilai default"; // dengan Nullish operator 
+
+            document.writeln(`<h3 style="color:rgb(59, 0, 251);">Nama : ${name}, Umur : ${age}, Kelas : ${data}</h3>`);
+
+        }
+
+        identitas("Adi", 6);
+
+
+        // Dengan default 
+        function name(firstName = "UNKNOWN First Name", middleName = "UNKNOWN Middle Name", lastName = "UNKNOWN Last Name"){
+            console.log(firstName);
+            console.log(middleName);
+            console.log(lastName);
+        }
+
+        name("Ari");
+        name("Ari",undefined,"Putra");
+        name(null, undefined, "Putra");
+        
+
+    </script>
+</body>
+</html>
