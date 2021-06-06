@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter pada Function</title>
+</head>
+<body>
+    <script>
+
+        
+        function nilaiSiswa(name, ...nilai){
+            let result = 0;
+            for (const jmlhNilai of nilai) {
+                result += jmlhNilai ;
+            }
+            document.writeln(`<p>Name ${name}, Nilai = ${result}</p>`);
+        }
+        
+        nilaiSiswa("Ari", 90, 20, 100, 50, 70);
+
+        // spread syntax;
+        document.writeln(`<h3>Menggunakan Spread syntax</h3>`);
+        const arrNilai = [10, 20, 30, 40, 50];
+        nilaiSiswa("Adi", ...arrNilai);
+
+
+
+    </script>
+</body>
+</html>
